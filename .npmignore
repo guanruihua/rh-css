@@ -1,7 +1,9 @@
 test/
 __test__/
+__css__
 push.bat
 *.md
 .gitignore
 jest.config.ts
 tsconfig.json
+*.js

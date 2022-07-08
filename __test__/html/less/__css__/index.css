@@ -1,0 +1,85 @@
+#Align .position {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+.cc {
+  width: 200px;
+  height: 30px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.aa {
+  width: 200px;
+  border: 1px solid #123;
+  height: 30px;
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+  position: relative;
+}
+.aa .bb {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  box-sizing: content-box;
+  border: 1px solid #123;
+  width: 50%;
+  height: 20px;
+}
+div {
+  width: 30px;
+  height: 30px;
+}
+.unit {
+  background-color: #eee;
+}
+.item {
+  width: 300px;
+  background-color: red;
+}
+.unit2,
+.item {
+  background-color: green;
+}
+.c {
+  color: red;
+  width: 123px;
+}
+#header {
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+.abbb {
+  width: 10px;
+  height: 20px;
+  line-height: 0;
+  resize: none;
+}
+.arrow {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  line-height: 0;
+  padding: 0;
+  margin: 0;
+}
+.arrow::after {
+  content: " ";
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  line-height: 0;
+  padding: 0;
+  margin: 0;
+  border-color: #575757;
+  border-style: solid;
+  transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+  border-width: 0 0 1px 1px;
+}

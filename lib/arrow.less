@@ -1,0 +1,36 @@
+#arrow() {
+
+  ._baseArrow(@width: 5px; @height: 5px; @borderWidth) {
+    display: inline-block;
+    .WidthHeight(@width, @height);
+    .PaddingMargin(0, 0);
+
+    &::after {
+      content: " ";
+      display: inline-block;
+      .WidthHeight((@width), (@height));
+      .PaddingMargin(0, 0);
+      border-color: #575757;
+      border-style: solid;
+      transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+      border-width: @borderWidth;
+    }
+  }
+
+  .top(@width: 5px; @height: 5px; @wide: 1px) {
+    #arrow._baseArrow(@width, @height, @wide 0 0 @wide);
+  }
+
+  .right(@width: 5px; @height: 5px; @wide: 1px) {
+    #arrow._baseArrow(@width, @height, @wide @wide 0 0);
+  }
+
+  .bottom(@width: 5px; @height: 5px; @wide: 1px) {
+    #arrow._baseArrow(@width, @height, 0 @wide @wide 0);
+  }
+
+  .left(@width: 5px; @height: 5px; @wide: 1px) {
+    #arrow._baseArrow(@width, @height, 0 0 @wide @wide);
+  }
+
+}

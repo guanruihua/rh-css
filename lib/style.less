@@ -1,0 +1,33 @@
+@import './arrow.less';
+@import './align.less';
+
+.WidthHeight(@width: 100%; @height: 0; @lineHeight: 0) {
+  width: @width;
+  height: @height;
+  line-height: @lineHeight;
+}
+
+.PaddingMargin(@padding: 0; @margin: 0) {
+  padding: @padding;
+  margin: @margin;
+}
+
+.PaddingMarginClear() {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+#textarea() {
+  .noResize {
+    resize: none;
+  }
+}
+
+#text() {
+  .overflow {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+}

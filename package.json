@@ -1,13 +1,12 @@
 {
   "name": "rh-css",
-  "version": "1.0.0",
+  "version": "0.0.2",
+  "main": "/lib/style.less",
+  "unpkg": "/lib/",
+  "jsdelivr": "/lib/",
   "description": "",
-  "main": "index.js",
-  "directories": {
-    "lib": "lib"
-  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "pub": "npm publish"
   },
   "repository": {
     "type": "git",
